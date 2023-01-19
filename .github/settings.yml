@@ -1,0 +1,5 @@
+# Extend default settings for all of my personal repositories defined in .github/settings.yml
+_extends: .github
+
+repository:
+  description: ESPHome configuration for my ESP32 and ESP8266 devices
