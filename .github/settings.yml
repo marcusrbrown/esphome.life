@@ -2,4 +2,4 @@
 _extends: .github
 
 repository:
-  description: ESPHome configuration for my ESP32 and ESP8266 devices
+  description: Projects and configuration for my ESPHome devices
