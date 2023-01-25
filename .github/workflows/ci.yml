@@ -22,7 +22,7 @@ jobs:
           - project-template-esp8266.yaml
     steps:
       - name: Checkout source code
-        uses: actions/checkout@dc323e67f16fb5f7663d20ff7941f27f5809e9b6 # v2.6.0
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
       - name: Build ESPHome firmware to verify configuration
         uses: esphome/build-action@0070bcf36a74e0635bea2e6691d36436d518568e # v1.7.0
         with:
