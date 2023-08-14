@@ -6,7 +6,7 @@ on:
   push:
     branches: [main, 'renovate/**']
   workflow_dispatch:
-  
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
@@ -18,8 +18,7 @@ jobs:
     strategy:
       matrix:
         file:
-          - project-template-esp32.yaml
-          - project-template-esp8266.yaml
+          - olimex-bluetooth-proxy-1349f4.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
