@@ -81,7 +81,7 @@ jobs:
           jq -s '{"name": "${{ needs.prepare.outputs.name }}", "version": "${{ needs.build.outputs.esphome-version }}", "home_assistant_domain": "esphome", "new_install_skip_erase": false, "builds":.}' output/*/manifest.json > output/manifest.json
           cp -R static/* output
       - env:
-          dry-run: ${{ github.ref == 'refs/heads/main' }}
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
         name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
