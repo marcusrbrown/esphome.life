@@ -1,0 +1,9 @@
+{
+  "chipFamily": "ESP32",
+  "parts": [
+    {
+      "path": "olimex-bluetooth-proxy-1349f4-esp32/olimex-bluetooth-proxy-1349f4-esp32.bin",
+      "offset": 0
+    }
+  ]
+}
