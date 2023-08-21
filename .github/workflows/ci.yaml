@@ -23,8 +23,7 @@ jobs:
       - id: config
         env:
           files: |-
-            project-template-esp32.yaml,
-            project-template-esp8266.yaml
+            olimex-bluetooth-proxy-1349f4.yaml
         name: Configure
         run: |
           files=$(echo "${{ env.files }}" | tr -d '\n' | jq -Rcn 'inputs | . / ","')
