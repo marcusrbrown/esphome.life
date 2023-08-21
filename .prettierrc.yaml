@@ -1,7 +1,7 @@
 singleQuote: true
 overrides:
   - files:
-      - "*.json"
+      - '*.json'
     options:
       singleQuote: false
       trailingComma: none
