@@ -1,0 +1,12 @@
+substitutions:
+  name: olimex-bluetooth-proxy-13451c
+  friendly_name: Bluetooth Proxy 13451c
+packages:
+  esphome.bluetooth-proxy: github://esphome/bluetooth-proxies/olimex-esp32-poe-iso.yaml@main
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+api:
+  encryption:
+    key: !secret olimex_bluetooth_proxy_13451c_api_key
