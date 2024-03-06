@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Build ESPHome firmware for ${{ matrix.file }}
         id: esphome-build
-        uses: esphome/build-action@b2737ecca0151b769fd60523de7289e10b584032 # v1.9.0
+        uses: esphome/build-action@ed76b2827b2f3b48544f4a9a718d2782be751ba5 # v2
         with:
           yaml_file: ${{ matrix.file }}
       - run: |
