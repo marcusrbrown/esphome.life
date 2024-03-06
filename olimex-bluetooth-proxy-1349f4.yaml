@@ -1,5 +1,5 @@
 substitutions:
-  name: "olimex-bluetooth-proxy-1349f4"
+  name: 'olimex-bluetooth-proxy-1349f4'
 packages:
   olimex-bluetooth-proxy: github://marcusrbrown/esphome-life/packages/olimex-bluetooth-proxy.yaml@main
 esphome:
