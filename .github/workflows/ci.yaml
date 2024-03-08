@@ -5,7 +5,6 @@ name: CI
   pull_request:
     types: [opened, reopened, synchronize]
   push:
-    branches: [main, 'renovate/**']
   workflow_dispatch:
 
 concurrency:
