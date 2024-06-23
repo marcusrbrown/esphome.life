@@ -8,8 +8,8 @@ name: CI
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: ${{ github.ref_name != 'main' }}
 
 jobs:
   prepare:
@@ -45,6 +45,8 @@ jobs:
         id: esphome-build
         uses: esphome/build-action@153c0141f73aacea378922b9bfe5262cdae79666 # v3.1.0
         with:
+          cache: ${{ github.event_name == 'push' }}
+          version: 2024.6.0 # renovate: datasource=github-releases depName=esphome/esphome
           yaml_file: ${{ matrix.file }}
       - run: |
           mkdir output

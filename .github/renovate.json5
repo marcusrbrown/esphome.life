@@ -1,4 +1,15 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: ['github>marcusrbrown/renovate-config#v2'],
+  packageRules: [
+    {
+      matchDepNames: ['esphome/esphome'],
+      commitMessageExtra: 'to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}',
+      pinDigests: false,
+      separateMajorMinor: false,
+      separateMinorPatch: false,
+      versioning: 'loose',
+    },
+  ],
+  rebaseWhen: 'behind-base-branch',
 }
