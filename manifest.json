@@ -1,6 +1,6 @@
 {
   "name": "esphome.life",
-  "version": "2024.6.0",
+  "version": "2024.6.3",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -8,7 +8,7 @@
       "chipFamily": "ESP32",
       "ota": {
         "path": "olimex-bluetooth-proxy-1349f4-esp32/olimex-bluetooth-proxy-1349f4-esp32.ota.bin",
-        "md5": "edfa4c383998dadf0e8d0f562e49640a"
+        "md5": "db44c9029e2e77419f09b47c84c9190d"
       },
       "parts": [
         {
