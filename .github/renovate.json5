@@ -4,14 +4,27 @@
   automergeType: 'pr',
   packageRules: [
     {
-      matchDepNames: ['esphome/esphome'],
+      description: ['Update ESPHome to the latest version.'],
+      matchPackageNames: ['docker.io/ptr727/esphome-nonroot', 'esphome/esphome', 'ghcr.io/esphome/esphome'],
+      commitBody: '{{#if hasReleaseNotes}}{{{body}}}{{/if}}',
       commitMessageExtra: 'to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}',
+      commitMessageTopic: '{{{depName}}}',
+      major: {
+        semanticCommitType: 'feat',
+      },
+      minor: {
+        semanticCommitType: 'feat',
+      },
+      patch: {
+        semanticCommitType: 'build',
+      },
       pinDigests: false,
       separateMajorMinor: false,
       separateMinorPatch: false,
       versioning: 'loose',
     },
   ],
+  platformAutomerge: true,
   prCreation: 'immediate',
   rebaseWhen: 'behind-base-branch',
 }
