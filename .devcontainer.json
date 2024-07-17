@@ -1,0 +1,49 @@
+// Adapted from https://github.com/ptr727/ESPHome-Config/blob/617e6c34b34566704e9ca767a034a91fca64d7a6/.devcontainer/devcontainer.json
+{
+  "name": "esphome.life",
+  "image": "docker.io/ptr727/esphome-nonroot:2024.6.6",
+  "containerEnv": {
+    "ESPHOME_DASHBOARD_USE_PING": "true",
+    "ESPHOME_VERBOSE": "true",
+    "TZ": "America/Phoenix"
+  },
+  "containerUser": "1001:100",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "ESPHome.esphome-vscode",
+        "ms-python.python",
+        "ms-vscode.vscode-serial-monitor",
+        "platformio.platformio-ide",
+        "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "esphome.validator": "local",
+        "files.associations": {
+          "*.yaml": "esphome",
+          "*.yml": "esphome",
+          "**/.github/workflows/*.yaml": "yaml",
+          "**/.github/settings.yml": "yaml",
+          "**/static/*.yml": "yaml",
+          ".prettierrc.yaml": "yaml",
+          ".yamllint*": "yaml"
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/usr/bin/bash"
+          }
+        }
+      }
+    }
+  },
+  "forwardPorts": [6052],
+  "mounts": ["source=${localWorkspaceFolder}/.cache,target=/cache,type=bind,consistency=cached"],
+  "overrideCommand": false,
+  "updateRemoteUserUID": false,
+  "workspaceFolder": "/config",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/config,type=bind"
+}
