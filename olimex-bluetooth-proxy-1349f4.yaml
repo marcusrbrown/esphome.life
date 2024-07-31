@@ -1,7 +1,7 @@
 substitutions:
   name: 'olimex-bluetooth-proxy-1349f4'
 packages:
-  olimex-bluetooth-proxy: github://marcusrbrown/esphome-life/packages/olimex-bluetooth-proxy.yaml@bcb92f9f31d55357f78548962d9d53347846c903
+  olimex-bluetooth-proxy: github://marcusrbrown/esphome.life/packages/olimex-bluetooth-proxy.yaml@main
 esphome:
   name: ${name}
   name_add_mac_suffix: false
