@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Build ESPHome firmware for ${{ matrix.file }}
         id: esphome-build
-        uses: esphome/build-action@9dcc9e036539b3dfc83dc3489f958999ea035efb # v3.3.0
+        uses: esphome/build-action@aeef8f588df370dc94d7dd403904d6989b004fc1 # v4.0.1
         with:
           cache: ${{ github.event_name == 'push' }}
           version: 2024.8.0 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
