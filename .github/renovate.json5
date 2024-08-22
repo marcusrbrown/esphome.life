@@ -25,6 +25,6 @@
     },
   ],
   platformAutomerge: true,
-  prCreation: 'immediate',
-  rebaseWhen: 'behind-base-branch',
+  prCreation: 'not-pending',
+  rebaseWhen: 'auto',
 }
