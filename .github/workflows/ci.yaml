@@ -48,7 +48,7 @@ jobs:
         uses: esphome/build-action@9dcc9e036539b3dfc83dc3489f958999ea035efb # v3.3.0
         with:
           cache: ${{ github.event_name == 'push' }}
-          version: 2024.8.0 # renovate: datasource=github-releases depName=esphome/esphome
+          version: 2024.8.0 # renovate: datasource=github-releases depName=esphome/esphome packageName=esphome
           yaml_file: ${{ matrix.file }}
       - run: |
           mkdir output
