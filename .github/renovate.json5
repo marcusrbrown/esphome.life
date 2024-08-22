@@ -5,7 +5,7 @@
   packageRules: [
     {
       description: ['Update ESPHome to the latest version.'],
-      matchPackageNames: ['docker.io/ptr727/esphome-nonroot', 'esphome/esphome', 'esphome', 'ghcr.io/esphome/esphome'],
+      matchPackageNames: ['docker.io/ptr727/esphome-nonroot', 'esphome/esphome', 'ghcr.io/esphome/esphome'],
       commitBody: '{{#if hasReleaseNotes}}{{{body}}}{{/if}}',
       commitMessageExtra: 'to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}',
       commitMessageTopic: '{{{depName}}}',
