@@ -47,7 +47,7 @@ jobs:
         id: esphome-build
         uses: esphome/build-action@aeef8f588df370dc94d7dd403904d6989b004fc1 # v4.0.1
         with:
-          cache: ${{ github.event_name == 'push' }}
+          cache: ${{ github.ref_name == github.repository.default_branch }}
           version: 2024.8.0 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
           yaml-file: ${{ matrix.file }}
       - run: |
