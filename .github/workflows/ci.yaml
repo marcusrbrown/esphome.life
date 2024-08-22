@@ -3,8 +3,10 @@ name: CI
 
 'on':
   pull_request:
-    types: [opened, reopened, synchronize]
+    branches: [main]
+    types: [opened, ready_for_review, reopened, synchronize]
   push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
