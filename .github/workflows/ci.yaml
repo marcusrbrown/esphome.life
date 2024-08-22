@@ -49,7 +49,7 @@ jobs:
         with:
           cache: ${{ github.event_name == 'push' }}
           version: 2024.8.0 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
-          yaml_file: ${{ matrix.file }}
+          yaml-file: ${{ matrix.file }}
       - run: |
           mkdir output
           mv "${{ steps.esphome-build.outputs.name }}" output/
