@@ -1,7 +1,7 @@
 // Adapted from https://github.com/ptr727/ESPHome-Config/blob/617e6c34b34566704e9ca767a034a91fca64d7a6/.devcontainer/devcontainer.json
 {
   "name": "esphome.life",
-  "image": "docker.io/ptr727/esphome-nonroot:2024.10.3",
+  "image": "docker.io/ptr727/esphome-nonroot:2024.11.0",
   "containerEnv": {
     "ESPHOME_DASHBOARD_USE_PING": "true",
     "ESPHOME_VERBOSE": "true",
