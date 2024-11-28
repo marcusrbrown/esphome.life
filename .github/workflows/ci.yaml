@@ -94,7 +94,7 @@ jobs:
       - env:
           dry-run: ${{ github.ref != 'refs/heads/main' }}
         name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@36ee275936a1c16fb4dedae090a06396849f07c0 # v4.7.0
+        uses: JamesIves/github-pages-deploy-action@dc18a3c6b46d56484cb63f291becd7ed4f0269b9 # v4.7.1
         with:
           branch: gh-pages
           clean: true
