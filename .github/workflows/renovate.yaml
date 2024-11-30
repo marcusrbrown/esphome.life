@@ -28,4 +28,4 @@ jobs:
     secrets: inherit
     uses: marcusrbrown/.github/.github/workflows/renovate.yaml@main
     with:
-      print-config: ${{ inputs.print-config || (github.event_name == 'push' && github.ref != 'refs/heads/main') }}
+      print-config: ${{ inputs.print-config || false }}
