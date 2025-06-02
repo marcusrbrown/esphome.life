@@ -24,7 +24,10 @@
       versioning: 'loose',
     },
   ],
-  platformAutomerge: true,
+  postUpgradeTasks: {
+    commands: ['npx prettier@3.5.3 --no-color --write .'],
+    executionMode: 'branch',
+  },
   prCreation: 'not-pending',
-  rebaseWhen: 'auto',
+  rebaseWhen: 'behind-base-branch',
 }
