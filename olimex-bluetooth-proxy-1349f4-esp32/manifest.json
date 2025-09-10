@@ -2,7 +2,7 @@
   "chipFamily": "ESP32",
   "ota": {
     "path": "olimex-bluetooth-proxy-1349f4-esp32.ota.bin",
-    "md5": "3eee21da4c217296f4d2e6784662e7cb"
+    "md5": "6e62e79333632b6587a442652db12817"
   },
   "parts": [
     {
