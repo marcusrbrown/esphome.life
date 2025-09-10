@@ -47,7 +47,7 @@ jobs:
         id: esphome-build
         uses: esphome/build-action@76cd6898550762b189215bbe6e50e29080fd2c33 # v7.0.0
         with:
-          version: 2025.8.3 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
+          version: 2025.8.4 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
           yaml-file: ${{ matrix.file }}
       - run: |
           mkdir output
