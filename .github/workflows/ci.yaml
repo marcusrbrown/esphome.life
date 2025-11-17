@@ -42,7 +42,7 @@ jobs:
         file: ${{ fromJson(needs.prepare.outputs.files) }}
     steps:
       - name: Checkout source code
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - name: Build ESPHome firmware for ${{ matrix.file }}
         id: esphome-build
         uses: esphome/build-action@f93bda46d83c761cd25bbfdf350cfe508a0a39d5 # v7.1.0
@@ -77,7 +77,7 @@ jobs:
         with:
           app-id: ${{ secrets.APPLICATION_ID }}
           private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
         with:
           ref: ${{ github.head_ref }}
           token: ${{ steps.get-workflow-app-token.outputs.token }}
