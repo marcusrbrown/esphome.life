@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - name: Build ESPHome firmware for ${{ matrix.file }}
         id: esphome-build
-        uses: esphome/build-action@f93bda46d83c761cd25bbfdf350cfe508a0a39d5 # v7.1.0
+        uses: esphome/build-action@f0a331817f5535854a10a42621b6a8b7ebe95c4c # v7.2.0
         with:
           version: 2025.12.7 # renovate: datasource=github-releases depName=esphome/esphome versioning=loose
           yaml-file: ${{ matrix.file }}
@@ -73,7 +73,7 @@ jobs:
     steps:
       - id: get-workflow-app-token
         name: Get Workflow Application Token
-        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
         with:
           app-id: ${{ secrets.APPLICATION_ID }}
           private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
