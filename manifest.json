@@ -8,15 +8,15 @@
       "chipFamily": "ESP32",
       "ota": {
         "path": "olimex-bluetooth-proxy-1349f4-esp32.ota.bin",
-        "md5": "c45558d3b9179fed75795f9d7a4345e9",
-        "sha256": "ee639c76de340a2544259db1f9235e545d899e8e6b7557458f0388a3098fdd51"
+        "md5": "2613c787dd542dddaa683224facb2acd",
+        "sha256": "b5041bcf762141dab81b17edbbcf38e3fdcc35830a4090158ada557dc8f7fc5e"
       },
       "parts": [
         {
           "path": "olimex-bluetooth-proxy-1349f4-esp32.factory.bin",
           "offset": 0,
-          "md5": "896341d6a2ad1fb8758a165f8dad18f6",
-          "sha256": "2f3d197dd53d6cf2861f32842bf10961d11c48a8bf93d6f598b14a48e9af881a"
+          "md5": "0eb88e5424d32120746366285bc124ad",
+          "sha256": "10cfa139c89b233ba06cbb148a5f5dc9a36543fd330008b33e4a8d367d1ff2e3"
         }
       ]
     }
